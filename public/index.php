@@ -1,4 +1,7 @@
-<?php 
+<?php
+include_once('../app/autoload.php');
+
+
 
 if(isset($_GET['page'])){
     

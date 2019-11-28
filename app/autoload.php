@@ -1,23 +1,19 @@
 <?php
-
-/**
-*Class autoload
-*Permet de compiler les class 
-*/
-
-class autoloader{
+    
+function autoload(string $class) : void    
+{
     
     
-public function __construct(){
-    
-}    
-    
-    
-    
-    
-    
-    
-    
-    
+    require '../app/'.$class .'.php';
     
 }
+    
+
+
+spl_autoload_register('autoload');
+        
+
+    
+    
+    
+    
