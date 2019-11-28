@@ -1,8 +1,24 @@
 body{
-    background-color: #595959;
+    background-color: #9D9CA6;
     color: white;
 }
 .header{
     
-    background-color: #595959;
+    background-color: #0D0D0D;
+    border-bottom-color: #590202;
+    border-bottom: 2px;
+}
+.logo, .reseau{ padding: 1%;}
+
+footer{
+    
+       background-color: #0D0D0D;
+}
+
+.bg-dark{
+    background-color: #0D0D0D;
+  
+}
+.navbar-light .navbar-nav .nav-link, #menu-responsive{
+    color:#73020C;
 }
