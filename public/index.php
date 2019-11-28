@@ -1,12 +1,13 @@
 <?php
-include_once('../app/autoload.php');
+include('../app/autoload.php');
 
 
 
 if(isset($_GET['page'])){
     
     $page = $_GET['page'];
-    
+    $pageView=new page($page);
+    $pageView->render();
     
 } else{
     
@@ -15,18 +16,4 @@ if(isset($_GET['page'])){
 
 
 
-ob_start();
-
-if($page == 'home'){
-    
-    include_once('../page/home.php');
-    
-    
-}
-
-
-
-
-$content = ob_get_clean();
-include_once('../page/template/__gabarit.php');
 

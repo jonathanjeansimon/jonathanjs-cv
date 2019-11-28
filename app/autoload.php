@@ -1,16 +1,8 @@
 <?php
     
-function autoload(string $class) : void    
-{
-    
-    
-    require '../app/'.$class .'.php';
-    
-}
-    
-
-
-spl_autoload_register('autoload');
+spl_autoload_register(function ($class) {
+        require  $class.'.php';
+});
         
 
     
